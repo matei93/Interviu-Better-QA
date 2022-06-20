@@ -21,6 +21,7 @@ public class UsernameSpecialCharacter extends Hooks {
 
         loginPage.loginValidProcess(inputData);
         userName.userNameSpecialCharacters(inputData);
+        userName.specialCharaterValidation();
     }
 }
 

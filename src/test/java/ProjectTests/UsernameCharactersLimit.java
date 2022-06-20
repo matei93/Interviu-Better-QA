@@ -21,15 +21,9 @@ public class UsernameCharactersLimit extends Hooks{
 
         loginPage = new LoginPage(getDriver());
         userName = new UsernamePage(getDriver());
-
         loginPage.loginValidProcess(inputData);
-        userName.userNameSpecialCharacters(inputData);
-
-
-
-
-
-
-
+        userName.userNameCharactersLimit(inputData);
+        userName.clickPasswordField();
+        userName.numberOflCharaterValidation();
     }
 }

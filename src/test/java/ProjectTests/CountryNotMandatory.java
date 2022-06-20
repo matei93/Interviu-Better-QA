@@ -19,9 +19,10 @@ public class CountryNotMandatory extends Hooks {
         loginPage = new LoginPage(getDriver());
         userName = new UsernamePage(getDriver());
         countryPage = new CountryPage(getDriver());
-
         loginPage.loginValidProcess(inputData);
         userName.userNameSpecialCharacters(inputData);
+        countryPage.countryField();
         countryPage.countryNotMandatory(inputData);
+
     }
 }
